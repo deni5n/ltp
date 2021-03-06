@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    test3
+
+    <mantra-text/>
+
   </div>
 </template>
 
 <script>
+
+import MantraText from '@/component/MantraText'
+
 export default {
-  name: 'app',
+  name: 'Mantra',
+  components: {
+    MantraText
+  },
+
 };
+
+
 </script>
 
 <style>
@@ -38,6 +49,7 @@ nav, footer, header, aside {
 html, body {
   height: 100%;
   width: 100%;
+  font-size: 100%;
   line-height: 1;
   font-size: 14px;
   -ms-text-size-adjust: 100%;
@@ -84,14 +96,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 #app {
   background-color: #fff;
-  padding: 2rem;
-  width: 972px;
-  margin: 0 auto;
-  height: 100%;
+  height: 100vh;
 }
 </style>

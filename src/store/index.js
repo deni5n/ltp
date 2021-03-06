@@ -17,7 +17,7 @@ export default new Vuex.Store({
           init({commit}, endpoint) {
               return new Promise(async(res, rej) => {
                   try {
-                      const {data} = await axios.get(`https://5fa25f72ba0736001613b895.mockapi.io/${endpoint}`);
+                      const {data} = await axios.get(`https://5fae22b163e40a0016d89565.mockapi.io/${endpoint}`);
                       commit('init', data);
                       res(true);
                   } catch (error) {
